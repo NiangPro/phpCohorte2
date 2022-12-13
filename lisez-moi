@@ -1,3 +1,9 @@
+Mardi 13 Decembre 2022
+    chemin ---> /crud
+        --->index.php
+    chemin ---> /crud/partials/
+        --->header.php
+        --->footer.php
 Lundi 12 Decembre 2022
     chemin ---> /
         --->formulaire.php
