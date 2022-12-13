@@ -3,5 +3,10 @@
 
 if (isset($_POST['envoyer'])) {
     extract($_POST);
-   echo "Bonjour ".$prenom." au niveau de la page traitement";
+   echo "
+        Prenom : ".ucfirst($prenom)." <br>
+        Nom : ".ucfirst($nom)." <br>
+        Email : ".ucfirst($email)." <br>
+        mot de passe  : ".ucfirst($mdp)." <br>
+   ";
 }
