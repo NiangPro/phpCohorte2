@@ -23,3 +23,16 @@ function ajouterPersonne($db, $prenom, $nom, $tel, $adresse, $sexe, $datenais){
         die("Erreur : ".$e->getMessage());
     }
 }
+
+function listePersonnes(){
+    global $db;
+    try {
+        $req = $db->prepare("SELECT * FROM personne");
+
+        $req->execute();
+
+       return $req->fetchAll();
+    }catch(PDOException $e){
+        die("Erreur : ".$e->getMessage());
+    }
+}
